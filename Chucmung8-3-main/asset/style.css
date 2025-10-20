@@ -1,11 +1,17 @@
+html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
   background: #ffe;
   font-size: 14px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #231f20;
-  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a {
   color: #000;
@@ -20,6 +26,9 @@ a {
   width: 1100px;
   height: 680px;
   margin-top: 10px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 #text {
   width: 400px;
@@ -50,9 +59,12 @@ a {
   font-size: 64px;
 }
 #canvas {
-  margin: 0 auto;
+  display: block;
+  margin: 0;
   width: 1100px;
   height: 680px;
+  max-width: 100%;
+  max-height: 100%;
 }
 #error {
   margin: 0 auto;

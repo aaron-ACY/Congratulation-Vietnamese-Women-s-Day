@@ -1,0 +1,78 @@
+/* Responsive overrides for tablet and phone */
+
+/* Tablet portrait (<= 1024px, vertical) */
+@media (max-width: 1024px) and (orientation: portrait) {
+  #wrap {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  #text {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: calc(100vw - 32px);
+    height: auto;
+  }
+
+  #code {
+    font-size: 16px;
+  }
+
+  #canvas {
+    width: 100vw;
+    aspect-ratio: 1100 / 680;
+    height: calc(100vw * 680 / 1100);
+    max-height: 100vh;
+  }
+
+  #clock-box {
+    left: 16px;
+    top: auto;
+    bottom: 16px;
+    font-size: 22px;
+  }
+
+  #clock-box a {
+    font-size: 22px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 520px) and (max-width: 950px) {
+  /* Điện thoại nằm ngang - cấu hình gần giống tablet */
+  #wrap {
+    width: 100vw;
+    height: 100dvh;
+    margin-top: 0;
+  }
+
+  #text {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: calc(100vw - 32px);
+    height: auto;
+  }
+
+  #code { font-size: 16px; }
+
+  #canvas {
+    width: 100vw;
+    aspect-ratio: 1100 / 680;
+    height: min(100dvh, calc(100vw * 680 / 1100));
+    max-height: 100dvh;
+  }
+
+  #clock-box {
+    left: 16px;
+    top: auto;
+    bottom: 16px;
+    font-size: 20px;
+  }
+
+  #clock-box a { font-size: 20px; }
+  }
+
+
+
